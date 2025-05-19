@@ -29,7 +29,7 @@ const page = () => {
   if (status === 'loading' || !selectedProduct) {
     return (
       <div className="mt-5 px-4">
-        <nav className="text-sm mb-4">
+        <nav className="text-base md:text-2xl mb-4">
           <ol className="flex space-x-2 text-gray-600">
             <li>
               <Link href="/" className="hover:underline">Inicio</Link>
@@ -68,7 +68,7 @@ const page = () => {
   if (status === 'failed') {
     return (
       <div className="mt-5 px-4">
-        <nav className="text-sm mb-4">
+        <nav className="text-base md:text-2xl mb-4">
           <ol className="flex space-x-2 text-gray-600">
             <li>
               <Link href="/" className="hover:underline">Inicio</Link>
@@ -90,7 +90,7 @@ const page = () => {
 
   return (
     <div className="mt-5 px-4">
-      <nav className="text-sm mb-4">
+      <nav className="text-base md:text-2xl mb-4">
         <ol className="flex space-x-2 text-gray-600">
           <li>
             <Link href="/" className="hover:underline">Inicio</Link>
@@ -124,7 +124,7 @@ const page = () => {
 
           {quantity >= 5 && (
             <div className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded border border-yellow-300">
-              Máximo 5 unidades por producto
+              Limitado a 5 unidades
             </div>
           )}
 

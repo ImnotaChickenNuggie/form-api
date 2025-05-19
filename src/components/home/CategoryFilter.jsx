@@ -14,10 +14,10 @@ const SelectCategory = () => {
 
   return (
     <div className="mb-4">
-      <h5 className="mb-3">Categorías:</h5>
-      <div className="d-flex flex-wrap gap-2">
+      <h5 className="mb-3 text-lg font-bold">Categorías:</h5>
+      <div className="flex flex-wrap gap-3">
         <button
-          className={`p-4 rounded-lg ${selectedCategory === 'all' ? 'bg-sky-400' : 'border border-blue-500'}`}
+          className={`p-4 rounded-lg hover:cursor-pointer ${selectedCategory === 'all' ? 'bg-black text-white' : 'border border-black text-black'}`}
           onClick={() => handleCategoryClick('all')}
         >
           Todos los productos
@@ -25,7 +25,7 @@ const SelectCategory = () => {
         {categories.map((category) => (
           <button
             key={category}
-            className={`p-4 rounded-lg ${selectedCategory === category ? 'bg-sky-400' : 'border border-blue-500'}`}
+            className={`p-4 rounded-lg hover:cursor-pointer ${selectedCategory === category ? 'bg-black text-white' : 'border border-black text-black'}`}
             onClick={() => handleCategoryClick(category)}
           >
             {category.charAt(0).toUpperCase() + category.slice(1)}

@@ -55,14 +55,14 @@ const page = () => {
                   <div className="flex items-center space-x-3">
                     <button
                       onClick={() => dispatch({ type: 'cart/removeFromCart', payload: item.id })}
-                      className="px-2 py-1 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 disabled:opacity-50"
+                      className="px-2 py-1 border border-blue-600 text-blue-600 rounded hover:cursor-pointer hover:bg-blue-50 disabled:opacity-50"
                     >
                       -
                     </button>
                     <span className="min-w-[20px] text-center">{item.quantity}</span>
                     <button
                       onClick={() => dispatch({ type: 'cart/addToCart', payload: item })}
-                      className="px-2 py-1 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 disabled:opacity-50"
+                      className="px-2 py-1 border border-blue-600 text-blue-600 rounded hover:cursor-pointer hover:bg-blue-50 disabled:opacity-50"
                       disabled={item.quantity >= 5}
                     >
                       +
@@ -83,7 +83,7 @@ const page = () => {
               <span>Subtotal:</span>
               <span>${total.toFixed(2)}</span>
             </div>
-            <Link href='/datos-personales' className="w-full py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+            <Link href='/datos-personales' className="w-full py-2 px-4 bg-blue-600 text-xl text-white rounded hover:bg-blue-700 transition">
               Proceder al pago
             </Link>
           </div>

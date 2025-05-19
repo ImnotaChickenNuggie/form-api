@@ -23,13 +23,13 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col bg-red-200">
+    <div className="flex flex-col p-10">
       {status === 'loading' ? (<><span>cargando...</span></>)
         : status === 'failed' ? (<>
           <span>ocurrio error</span>
         </>)
           : (<>
-            <h1 className="mb-4">Nuestros Productos</h1>
+            <h1 className="mb-4 text-center font-bold text-3xl py-10">Conoce nuestros productos exclusivos</h1>
             <CategoryFilter />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -47,7 +47,7 @@ export default function Home() {
                 ))
               ) : (
                 <div className="col-span-full">
-                  <h3 className="text-center text-lg font-medium">
+                  <h3 className="text-center text-3xl font-bold">
                     Actualmente no hay productos disponibles, estamos trabajando en ello.
                   </h3>
                 </div>
