@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Logo from '../../public/logo.jpg'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +14,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo section */}
           <div className="flex-shrink-0">
-            <div className="h-8 w-32 bg-gray-200">
-              {/* Replace with your logo */}
-              {/* <Image src="/logo.png" alt="Logo" width={128} height={32} /> */}
+            <div className="h-8 w-44 items-center flex flex-row gap-x-3">
+              <Image src={Logo} alt="Logo" className="w-12" width={44} height={32} />
+              <span className="font-bold uppercase text-sm md:text-lg">Fake Store</span>
             </div>
           </div>
 
@@ -22,19 +24,19 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="/"
-              className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium"
             >
               Inicio
             </Link>
             <Link
               href="/carrito"
-              className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium"
             >
               Carrito
             </Link>
             <Link
-              href="/profile"
-              className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+              href="/perfil"
+              className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium"
             >
               Perfil
             </Link>
@@ -99,7 +101,7 @@ const Navbar = () => {
             Carrito
           </Link>
           <Link
-            href="/profile"
+            href="/perfil"
             className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium"
           >
             Perfil
