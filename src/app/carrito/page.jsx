@@ -11,12 +11,12 @@ const page = () => {
 
   if (cartItems.length === 0) {
     return (
-      <div className="py-5 text-center">
+      <div className="py-5 text-center flex flex-col">
         <div className="bg-blue-100 text-blue-800 px-4 py-3 rounded mb-4 inline-block">
           Tu carrito está vacío
         </div>
         <Link href="/" passHref>
-          <button className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+          <button className="mt-2 hover:cursor-pointer px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
             Continuar comprando
           </button>
         </Link>

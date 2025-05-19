@@ -1,0 +1,68 @@
+{
+  "orders": [
+    {
+      "id": "e602",
+      "firstName": "Juan",
+      "lastName": "asdf",
+      "email": "asdf@asd.com",
+      "phone": "555345345",
+      "postalCode": "44",
+      "state": [
+        {
+          "label": "Pachuca",
+          "id": "Pachuca"
+        }
+      ],
+      "errors": {
+        "firstName": "",
+        "lastName": "",
+        "email": "",
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": 1,
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "category": "men's clothing",
+          "price": 109.95,
+          "quantity": 2
+        }
+      ],
+      "rating": 5,
+      "orderDate": "2025-05-19T19:47:01.946Z"
+    },
+    {
+      "id": "7550",
+      "firstName": "Juan",
+      "lastName": "asdf",
+      "email": "asdf@asd.com",
+      "phone": "555345345",
+      "postalCode": "44",
+      "state": [
+        {
+          "label": "Pachuca",
+          "id": "Pachuca"
+        }
+      ],
+      "errors": {
+        "firstName": "",
+        "lastName": "",
+        "email": "",
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": 1,
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "category": "men's clothing",
+          "price": 109.95,
+          "quantity": 2
+        }
+      ],
+      "rating": 0,
+      "orderDate": "2025-05-19T19:55:20.362Z"
+    }
+  ]
+}

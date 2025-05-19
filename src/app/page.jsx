@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchProducts, selectFilteredProducts } from "@/redux/slices/productsSlice";
 import ProductCard from "@/components/home/ProductCard";
 import CategoryFilter from "@/components/home/CategoryFilter";
+import Loader from '@/components/home/Loader';
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -24,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col p-10">
-      {status === 'loading' ? (<><span>cargando...</span></>)
+      {status === 'loading' ? (<><Loader/></>)
         : status === 'failed' ? (<>
           <span>ocurrio error</span>
         </>)
