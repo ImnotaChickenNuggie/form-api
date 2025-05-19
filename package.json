@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.9.0",
     "baseui": "^0.0.0-next-2113e1821",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0",
     "styletron-engine-monolithic": "^1.0.0",
     "styletron-react": "^6.1.1"
   },
